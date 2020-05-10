@@ -1,0 +1,171 @@
+body
+  background-color #fff !important
+  height 100%
+
+.van-pull-refresh__head
+  font-size 24px  
+
+.van-loading__text
+  font-size 24px
+
+.van-list__error-text, .van-list__finished-text, .van-list__loading
+  font-size 24px
+
+.course
+  display flex
+  flex-direction column
+  width 750px
+  height 100%  
+
+  .container
+    // display flex
+    flex-direction column
+    align-items center
+    flex 1
+    overflow auto
+    width 750px
+    background #fafafa
+
+    .container__selct
+      border  4px #F3D825 solid 
+
+    .container__comtent
+      display flex
+      justify-content space-between
+      align-items center
+      width 706px
+      height 240px
+      background rgba(255,248,198,1) rgba(255,255,255,1)
+      border-radius 12px
+      padding 0 28px 
+      margin 28px auto 0 
+      box-shadow 0px 2px 8px 0px rgba(0,0,0,0.1)
+
+      .comtent__left
+        display flex
+        align-items center
+        // margin-left 28px 
+
+        .left__img
+          width 160px
+          height 160px
+
+        .left__text
+          display  flex
+          flex-direction  column
+          // justify-content  center
+          margin-left  30px
+
+          .left__text--name
+            font-weight  bold
+            font-family  PingFangSC-Medium
+            font-size  32px
+            color  #0F0F0F
+            letter-spacing  -0.52px
+          
+          .left__text--deadline
+            margin-top 20px
+            height 33px
+            font-size 24px
+            font-family PingFangSC-Regular,PingFang SC
+            font-weight 400
+            color rgba(119,122,136,1)
+            line-height 33px
+
+          .left__text--price
+            margin-top 22px
+            display  flex
+
+            .left__text--original
+              height 40px
+              font-size 28px
+              font-family PingFangSC-Regular,PingFang SC
+              font-weight 400
+              color rgba(43,44,49,1)
+              line-height 40px
+              text-decoration  line-through
+
+            .left__text--backprice
+              margin-left 15px
+              height 40px
+              font-size 28px
+              font-family PingFangSC-Regular,PingFang SC
+              font-weight 400
+              color rgba(230,17,17,1)
+              line-height 40px  
+
+        .comtent__right
+          position absolute
+          right 10px
+          top 0
+          height 40px
+          font-size 28px
+          font-family PingFangSC-Regular,PingFang SC
+          font-weight 400
+          color rgba(119,122,136,1)
+          line-height 40px 
+
+  .foot
+    display  flex
+    flex-direction  column
+    justify-content  center
+    align-items  center
+    width 750px
+    height 156px
+    background  #fafafa
+
+    .foot__province
+      height 33px
+      font-size 24px
+      font-family PingFangSC-Regular,PingFang SC
+      font-weight 400
+      color rgba(129,131,144,1)
+      line-height 33px
+      margin-bottom  20px
+
+    .foot__place
+      display  flex
+      justify-content  space-between
+      align-items  center
+      padding 0 30px
+      width 750px
+      height 98px
+      background rgba(250,250,252,1) rgba(255,255,255,1)
+      box-shadow 0px -2px 4px 0px rgba(0,0,0,0.1)
+
+      .foot__place--price
+        height 40px
+
+        .place__priceplace--total
+          height 40px
+          font-size 28px
+          font-family PingFangSC-Regular,PingFang SC
+          font-weight 400
+          color rgba(43,44,49,1)
+          line-height 40px
+
+        .place__priceplace--price
+          height 40px
+          font-size 28px
+          font-family PingFangSC-Regular,PingFang SC
+          font-weight 400
+          color #E61111FF
+          line-height 40px  
+
+      .foot__place--confirm
+        width 256px
+        height 60px
+        background rgba(252,219,0,1)
+        border-radius 8px
+        font-size 24px
+        font-family PingFangSC-Regular,PingFang SC
+        font-weight 400
+        color rgba(43,44,49,1)
+        line-height 33px
+        text-align  center
+        line-height  60px              
+
+
+
+
+    

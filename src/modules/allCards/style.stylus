@@ -1,0 +1,291 @@
+body
+  background-color #fff !important
+  height 100%
+
+.decorate
+  overflow-x auto
+
+.van-pull-refresh__head
+  font-size 24px  
+
+.van-loading__text
+  font-size 24px
+
+.personal
+  display flex
+  flex-direction column
+  width 750px
+  height 100%
+
+  .personal_top
+    width 750px
+    height 264px
+    background $primary-color
+
+    .personal_top-head
+      display flex
+      align-items center
+      position fixed
+      z-index 2
+      height 88px
+      width 750px
+      background $primary-color
+
+      .personal_top-headimg
+        padding-left 27px
+        width 64px
+        height 40px
+
+      .personal_top-headspan
+        display block
+        padding-left 10px
+        font-size 28px
+        font-weight bold
+        margin-top 4px
+        color rgba(43, 44, 49, 1)
+
+      .personal_top-allcard
+        width 130px
+        height 60px
+        margin-left 190px
+        line-height 60px
+        width 144px
+        font-size 36px
+        font-family PingFangSC-Medium, PingFang SC
+        font-weight bold
+        color rgba(0, 0, 0, 1)
+
+.personal_top-show
+  width 750px
+  height 176px
+  position fixed
+  z-index 2
+  top 88px
+  background $primary-color
+
+  .personal_top-region
+    display flex
+    flex-direction column
+    height 88px
+    justify-content center
+    width 750px
+
+    .personal_top-bottom
+      display flex
+      flex-wrap nowrap
+      width 714px
+      height 78px
+      margin-left 18px
+      margin-right 18px
+      overflow-x auto
+
+      .posnal-top_areaname
+        width auto
+        height 48px
+        color #FFFFFF
+
+      .posnal-top_name
+        white-space nowrap
+        height 48px
+        color #FFFFFF
+        width auto
+        font-family PingFangSC-Regular, PingFang SC
+        font-weight 400
+        text-align center
+        font-size 28px
+        border-radius 10px
+        margin-right 20px
+        padding 14px
+        line-height 20px
+        border none
+        background #E6C805
+
+      .posnal-top_selectname
+        background-color rgba(43, 44, 49, 1)
+        color #ffffff
+
+      .van-dropdown-menu
+        width 714px
+        height 56px
+        border-radius 6px
+
+      .van-dropdown-menu__item
+        left 0
+        width 714px
+        height 56px
+        line-height 56px
+        background #fff
+        border-radius 6px
+        padding-left 10px
+        justify-content flex-start
+
+      .van-dropdown-menu__title
+        line-height 56px
+        font-size 28px
+        height 56px
+        padding-left 10px
+
+      .van-dropdown-menu__title::after
+        opacity 1
+
+      .van-cell
+        font-size 28px
+        line-height 56px
+
+      .van-dropdown-item__content
+        position absolute
+        max-height 80%
+        width 714px
+        left 18px
+
+      .posnal-top_menu
+        margin-left 20px
+        width 580px
+        border-radius 20px
+
+.personal_center
+  display flex
+  align-content center
+  flex-direction column
+  flex 1
+  overflow-y auto
+  width 750px
+  background #FAFAFC
+
+  .personal_center-shop
+    display flex
+    flex-direction column
+    width 710px
+    margin 20px
+    padding-bottom 20px
+    height auto
+    background #FFFFFF
+    box-shadow 0px 0px 6px 6px rgba(229, 229, 229, 1)
+
+    .personal_center-shopname
+      font-weight bold
+      padding 14px
+      font-size 32px
+      border-bottom 1px solid #E5E5E5
+      background #FFFFFF
+      color #2B2C31
+
+      .personal_center-shopimg
+        width 34px
+        height 40px
+
+    .personal_center-img
+      display flex
+      position relative
+      width 670px
+      height 320px
+      margin 20px 20px 0 20px
+
+      .personal_center-nvshen
+        width 670px
+        height 320px
+        border-radius 20px  
+
+      .personal_center-cover
+        position absolute
+        top 0
+        left 0
+        width 670px
+        height 320px
+        background #2B2C31
+        border-radius 20px
+        opacity 0.35
+
+      .personal_center-cardname
+        position absolute
+        top 30px
+        left 30px
+        width auto
+        height 78px
+        font-size 56px
+        font-family PingFangSC-Medium, PingFang SC
+        font-weight bold
+        color rgba(255, 255, 255, 1)
+        line-height 78px
+        text-shadow 0px 2px 8px rgba(0, 0, 0, 0.1)
+
+      .personal_center-price
+        position absolute
+        top 40px
+        right 54px
+        // width auto
+        height 67px
+        font-size 48px
+        font-family PingFangSC-Medium, PingFang SC
+        font-weight bold
+        color rgba(240, 232, 184, 1)
+        line-height 67px
+        text-shadow 0px 2px 8px rgba(0, 0, 0, 0.1)
+
+      .personal_center-apply
+        position absolute
+        left 40px
+        bottom 88px
+        width auto
+        height 33px
+        font-size 24px
+        font-family PingFangSC-Medium, PingFang SC
+        font-weight bold
+        color rgba(255, 255, 255, 1)
+        line-height 33px
+        text-shadow 0px 2px 8px rgba(0, 0, 0, 0.1)
+
+      .personal_center-pci
+        position absolute
+        left 40px
+        bottom 48px
+        font-size 22px
+        font-family PingFangSC-Regular, PingFang SC
+        font-weight 400
+        color rgba(255, 255, 255, 1)
+        line-height 32px
+        text-shadow 0px 2px 8px rgba(0, 0, 0, 0.1)
+        width auto
+        height 32px
+        padding 0 4px
+        background $primary-color
+        box-shadow 0px 2px 8px 0px rgba(0, 0, 0, 0.1)
+        border-radius 3px
+        text-align center
+
+      .personal_center-residue
+        position absolute
+        left 140px
+        bottom 49px
+        width auto
+        height 30px
+        font-size 22px
+        font-family PingFangSC-Regular, PingFang SC
+        font-weight 400
+        color rgba(255, 255, 255, 1)
+        line-height 30px
+        text-shadow 0px 2px 8px rgba(0, 0, 0, 0.1)
+
+      .personal_center-submit
+        position absolute
+        right 40px
+        bottom 40px
+        width 156px
+        height 48px
+        background $primary-color
+        box-shadow 0px 2px 8px 0px rgba(0, 0, 0, 0.1)
+        border-radius 24px
+        border none
+        font-size 24px
+        font-family PingFangSC-Regular, PingFang SC
+        font-weight 400
+        color rgba(43, 44, 49, 1)
+        text-shadow 0px 2px 8px rgba(0, 0, 0, 0.1)
+
+.cardfoot
+  display flex
+  width 750px
+  height 98px
+  align-items: center
+  background #FFFFFF
+  justify-content: space-around        

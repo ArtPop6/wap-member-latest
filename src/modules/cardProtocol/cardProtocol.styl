@@ -1,0 +1,313 @@
+body
+  margin 0
+  padding 0
+
+.protocol-wrap
+  position absolute
+  display flex
+  flex-direction column
+  height 100%
+  background #F2F2F2
+
+  .top
+    display flex
+    height 136px
+    background-color black
+    width 100%
+    padding 0 30px
+    justify-content space-between
+    align-items center
+    background $primary-color
+    border-radius 0 0 36px 0
+    border-bottom 1px solid #ebebeb
+    box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.1)
+
+    .protocol-title
+      color #000
+      font-size 32px
+      font-weight 580
+      height 60px
+      width 300px
+      line-height 70px
+      display flex
+      align-items center
+
+      .title
+        font-size 32px
+
+      .protocol-icon
+        width 35px
+        height 32px
+        margin-right 12px
+
+    .back-button
+      right 20px
+      width 70px
+      border-radius 50px
+      height 68px
+      border none
+      top 30px
+      background url('../../assets/stores/no.png') center right no-repeat
+
+  .center
+    width 750px
+    text-align center
+    font-size 40px
+    font-weight 600
+    height 166px
+    line-height 166px
+    padding 0 36px 0 36px
+    display flex
+    justify-content space-between
+    align-items flex-end
+
+    .paper
+      width 200px
+      height 133px
+      background #fff
+      border-radius 8px 8px 0 0
+      position relative
+      overflow hidden
+      animation a-c-paper 0.5s 0.45s cubic-bezier(0.42, 1.14, 1, 1) both
+      box-shadow 2px -2px 8px 0 rgba(0, 0, 0, 0.1)
+
+      @keyframes a-c-paper
+        0%
+          opacity 0
+          transform translate(0px, 142px) scale(0.9, 1.1)
+
+        30%
+          transform translate(0px, -10px) scale(1.2, 0.8)
+
+        60%
+          transform translate(0px, 5px) scale(0.95, 1.05)
+
+        80%
+          transform translate(0px, -2px) scale(1.02, 0.98)
+
+        100%
+          opacity 1
+          transform translate(0px, 0px) scale(1, 1)
+
+      .paper-line
+        position absolute
+        top 18px
+        right 20px
+        width 160px
+        height 12px
+        background #d8e0ea
+
+      .l1
+        animation a-c-quote-1-line 0.2s 0.6s linear both
+
+        @keyframes a-c-quote-1-line
+          0%
+            opacity 0
+            transform translate(0, 1px) scale(0.9, 1)
+
+          50%
+            opacity 1
+            transform translate(0, -1px) scale(1.1, 1)
+
+          100%
+            opacity 1
+            transform translate(0, 0px) scale(1, 1)
+
+      .l2
+        top 40px
+        height 12px
+        animation a-c-quote-1-line 0.2s 0.7s linear both
+
+      .l3
+        top 64px
+        width 115px
+        right 20px
+        animation a-c-quote-1-line 0.2s 0.8s linear both
+
+      .l4
+        top 86px
+        right 20px
+        width 115px
+        animation a-c-quote-1-line 0.2s 0.9s linear both
+
+      .l5
+        top 108px
+        animation a-c-quote-1-line 0.2s 1s linear both
+
+      .paper-block
+        position absolute
+        top 62px
+        left 20px
+        width 38px
+        height 36px
+        background #d8e0ea
+        animation a-c-quote-1-line 0.2s 0.8s linear both
+
+      .pen
+        position absolute
+        width 25px
+        height 88px
+        right 20px
+        bottom 0
+        animation a-c-paper 0.5s 0.7s cubic-bezier(0.42, 1.14, 1, 1) both
+
+        .pen-t
+          position absolute
+          width 0
+          height 0
+          top 0
+          left 7px
+          border-left 6px solid transparent
+          border-right 6px solid transparent
+          border-bottom 8px solid #242d3b
+          z-index 1
+
+        .pen-m
+          position absolute
+          left 0
+          top 0
+          width 0
+          height 0
+          border-left 12.5px solid transparent
+          border-right 12.5px solid transparent
+          border-bottom 20px solid #dfe6f0
+
+        .pen-b
+          position absolute
+          left 0
+          bottom 0
+          width 25px
+          height 68px
+          background $primary-color
+          box-shadow 2px -2px 8px 0 rgba(0, 0, 0, 0.1)
+
+    .center-name
+      font-weight bold
+      
+    .quote-r
+      width 200px
+      height 133px
+      position relative
+
+      .quote-r-bg:after
+        content ''
+        position absolute
+        bottom -14px
+        right 9px
+        width 0
+        height 0
+        border-top 7px solid #d8e0ea
+        border-left 7px solid transparent
+        border-right 7px solid #d8e0ea
+        border-bottom 7px solid transparent
+
+      .quote-r-bg
+        position absolute
+        top 12px
+        left 40px
+        width 100px
+        height 80px
+        background #fff
+        border-radius 8px
+        animation a-c-quote-1 0.5s 1.3s linear both
+        animation up-down 3s infinite
+        box-shadow 2px -2px 8px 0 rgba(0, 0, 0, 0.1)
+
+        @keyframes up-down
+          0%
+            top 3px
+
+          50%
+            top 21px
+
+          100%
+            top 3px
+
+        @keyframes a-c-quote-1
+          0%
+            opacity 0
+            transform translate(0, 5px) scale(0.1, 0.1)
+
+          30%
+            opacity 1
+            transform translate(0, -2px) scale(1.2, 0.8)
+
+          60%
+            opacity 1
+            transform translate(0, 1px) scale(0.95, 1.05)
+
+          80%
+            opacity 1
+            transform translate(0, -1px) scale(1.02, 0.98)
+
+          100%
+            opacity 1
+            transform translate(0, 0px) scale(1, 1)
+
+        .quote-r-dot
+          background-color $primary-color
+          position absolute
+          left 20px
+          top 46px
+          width 12px
+          height 12px
+          box-shadow 1px -1px 2px 0 rgba(0, 0, 0, 0.1)
+          // animation up-down-dot 3s infinite
+
+        .d1
+          animation a-c-quote-2-dot 0.2s 1.5s linear both
+
+          @keyframes a-c-quote-2-dot
+            0%
+              opacity 0
+              top 37px
+              transform scale(0.5)
+
+            50%
+              opacity 1
+              top 55px
+              transform scale(1.5)
+
+            100%
+              opacity 1
+              top 37px
+              transform scale(1)
+
+        .d2
+          animation up-down 3s infinite
+          left 45px
+          animation a-c-quote-2-dot 0.2s 1.6s linear both
+
+        .d3
+          animation up-down 3s infinite
+          left 67px
+          animation a-c-quote-2-dot 0.2s 1.7s linear both
+
+  .protocol
+    flex 1
+    line-height 40px
+    font-size 26px
+    margin 0
+    padding 26px 18px 18px 18px
+    margin 0 18px 18px 18px
+    border 2px solid $primary-color
+    border-radius 30px 30px 0 0
+    background #fff
+    overflow auto
+    animation imageAnimation 0.35s linear
+
+    @keyframes imageAnimation
+      0%
+        opacity 0
+        transform translateY(720px)
+
+      100%
+        opacity 1
+        transform translateY(0)
+
+    .protocol_headline
+      font-weight bold
+      margin-top 10px
+      font-size 32px
+      // background linear-gradient(to right, $primary-color, #fff)
+      // border-radius 25px

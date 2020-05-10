@@ -1,0 +1,203 @@
+.van-toast
+  .van-toast__text
+    font-size 28px
+    padding 13px 10px
+    border-radius 8px
+
+.van-pull-refresh__head
+  font-size 28px
+
+  .van-loading__text
+    font-size 24px
+
+.course-wrap
+  // background #fafafc
+  height 100%
+  display flex
+  flex-direction column
+  overflow hidden
+  background #fafafc
+
+  .button-group
+    display flex
+    background #fafafc
+    height 128px
+    align-items center
+    padding 0 0 0 20px
+
+    #act
+      background #fcdb00
+      color #fff
+      font-weight bold
+      display flex
+      align-items center
+      justify-content space-around
+      font-size 32px
+      text-shadow 3px 3px 5px rgba(0, 0, 0, 0.04)
+
+    .coach-button
+      font-weight bold
+      text-align center
+      height 68px
+      width 180px
+      line-height 68px
+      background #fff
+      color #666
+      font-size 30px
+      box-shadow 0px 2px 6px 0px rgba(0, 0, 0, .1)
+      margin-right 26px
+      border 1px solid #ebebeb
+      border-radius 13px
+
+  // .coach-button:nth-child(2)
+  //   text-align center
+  //   width 375px
+  //   line-height 80px
+  //   background #fff
+  //   font-size 30px
+  //   border-radius 22px 22px 0 0
+  //   box-shadow 0px -2px 6px 0px rgba(0, 0, 0, .1)
+
+  .van-pull-refresh::-webkit-scrollbar
+    display none
+
+  .van-pull-refresh
+    flex 1
+    overflow auto
+
+    .van-pull-refresh__head
+    .course-info__wrap::-webkit-scrollbar
+      display none
+
+    .course-info__wrap
+      padding 0 20px 0 20px
+      background #fafafc
+      flex 1
+      overflow auto
+      // box-shadow 0px -2px 5px 0px rgba(0, 0, 0, .1)
+
+      .course-date
+        width 100%
+        background #fff
+        margin-bottom 20px
+        border-radius 18px
+        box-shadow 0px 2px 9px 0px rgba(0, 0, 0, 0.08)
+
+        .course-store
+          height 68px
+          //border-bottom 1px solid #ebebeb
+          padding 10px 0px 10px 20px
+          display flex
+          align-items center
+          justify-content space-between
+          color #666
+          border-radius 18px 18px 0 0
+
+          .course-store__name
+            font-size 28px
+            line-height 48px
+            font-weight 560
+
+        // .hole
+        //   width 200px
+        //   display flex
+
+        //   .hole-one
+        //     width 30px
+        //     height 30px
+        //     border-radius 100%
+        //     background #f3f3f3
+        //     margin-right 36px
+
+        .course-date__class
+          display flex
+          justify-content space-between
+          height 196px
+          padding 49px 26px
+          //box-shadow 0 1px 3px 0 rgba(0, 0, 0, 0.1)
+          border-top 1px solid #ebebeb
+
+          .course-seat
+            display flex
+
+            .avatar
+              width 98px
+              height 98px
+              border-radius 100%
+              border 1px solid #ebebeb
+              margin-right 15px
+
+            .course-desc
+              display flex
+              flex-direction column
+              justify-content space-between
+
+              .course-name
+                font-weight bold
+                font-size 32px
+
+              .course-place
+                color #666
+                font-size 28px
+
+          .course-time__title
+            display flex
+            flex-direction column
+            align-items center
+            justify-content space-between
+
+            .course-time
+              color #666
+              font-size 27px
+
+            .space-name
+              font-size 30px
+              font-weight bold
+              padding 3px 12px
+              background $primary-color
+              color #fff
+              -webkit-border-radius: 12px
+              -moz-border-radius: 12px
+              border-radius: 12px
+              text-shadow 3px 3px 8px rgba(0, 0, 0, 0.04)
+              box-shadow 3px 3px 5px 0px rgba(0, 0, 0, 0.04)
+
+            .train-log
+              font-size 26px
+              color #fff
+              padding 6px 13px
+              background $primary-color
+              font-weight bold
+              text-shadow 3px 3px 5px rgba(0, 0, 0, 0.04)
+              box-shadow 3px 3px 5px 0px rgba(0, 0, 0, 0.04)
+              -webkit-border-radius 25px
+              -moz-border-radius 25px
+              border-radius 25px
+
+  .no-data
+    flex 1
+    overflow auto
+    display flex
+    justify-content space-around
+
+    .no-data__content
+      display flex
+      flex-direction column
+      align-items center
+      margin-top 130px
+
+      .no-class-pic
+        width 220px
+        height 250px
+        margin-bottom 20px
+
+      .no-data__title
+        color #666
+        font-size 35px
+        margin-bottom 5px
+        font-weight 550
+
+      .go-other__class
+        color #1890ff
+        font-size 28px
+        margin-bottom 500px

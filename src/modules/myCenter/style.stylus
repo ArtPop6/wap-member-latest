@@ -1,0 +1,139 @@
+body
+  background-color #fff !important
+  height 100%
+  
+.mycard
+  display flex
+  flex-direction column
+  width 750px
+  height 100%
+  background #E5E5E5
+
+  .cardheader
+    width 750px
+    height 168px
+    background $primary-color
+
+    .cardheader_foot
+      display flex
+      align-items center
+      width 750px
+      height 168px
+
+      .cardheader_foot-left
+        display flex
+        justify-content center
+        align-items center
+        width 104px
+        height 104px
+        margin-left 45px
+
+        .cardheader_foot-photo
+          width 88px
+          height 88px
+          background rgba(216,216,216,1)
+          border 2px solid rgba(255,255,255,1)
+
+      .cardheader_foot-right
+        display flex
+        flex-direction column
+        justify-content center
+        width 390px
+        height 104px
+        padding-left 20px
+
+        .cardheader_foot-rtname
+          width auto
+          height 45px
+          font-size 32px
+          font-family PingFangSC-Medium, PingFang SC
+          font-weight bold
+          color rgba(0, 0, 0, 1)
+          line-height 45px
+
+        .cardheader_foot-rtphone
+          width auto
+          height 40px
+          font-size 28px
+          font-family PingFangSC-Medium, PingFang SC
+          font-weight bold
+          color rgba(0, 0, 0, 0.5)
+          line-height 40px
+
+      .cardheader_foot-rtimg
+        width 211px
+        height 168px
+
+  .cardcenter
+    display flex
+    flex-direction column
+    flex 1
+    width 750px
+    height 100%
+    background #fafafc
+
+    .cardcenter_top
+      display flex
+      align-items center
+      justify-content space-between
+      width 710px
+      margin 20px
+      height 88px
+      background rgba(255,248,198,1) rgba(255,255,255,1)
+      box-shadow 0px 2px 8px 0px rgba(0,0,0,0.1)
+
+      .cardcenter_top-left
+        margin-left 30px
+
+        .cardcenter_top-img
+          width 40px
+          height 40px
+
+      .ardcenter_top-mycard
+        margin-left 20px
+        width auto
+        height 40px
+        font-size 28px
+        font-family PingFangSC-Regular,PingFang SC
+        font-weight 400
+        color rgba(43,44,49,1)
+        line-height 40px  
+
+    .cardcenter_top-right
+      margin-right 30px
+
+      .cardcenter_top-arrow
+        width 32px
+        height 32px   
+
+  .cardfoot
+    display flex
+    width 750px
+    height 98px
+    align-items: center
+    background #FFFFFF
+    justify-content: space-around
+
+    .cardbottom
+      border-bottom 6px solid rgba(0,0,0,1) 
+
+    .cardfoot_bottom
+      display flex
+      flex-direction column
+      justify-content center
+      align-items center
+      width 64px
+      height 98px 
+
+      .cardfoot_bottom-img
+        width 32px
+        height 32px
+
+      .cardfoot_bottom-text
+        width auto
+        height 28px
+        font-size 20px
+        font-family PingFangSC-Regular,PingFang SC
+        font-weight 400
+        color rgba(0,0,0,1)
+        line-height 28px  

@@ -1,0 +1,62 @@
+.course-wrap
+  // background #fafafc
+  height 100%
+  display flex
+  flex-direction column
+
+  .course-info__wrap::-webkit-scrollbar
+    display none
+
+  .course-info__wrap
+    padding 20px 20px 0 20px
+    background #fafafc
+    flex 1
+    overflow auto
+
+    .course-date
+      width 100%
+      background #fff
+      margin-bottom 20px
+      box-shadow 0px 2px 6px 0px rgba(0, 0, 0, .1)
+
+      .course-store
+        height 68px
+        font-size 28px
+        line-height 48px
+        border-bottom 1px solid #E5E5E5
+        padding 10px 15px
+        font-weight 560
+
+      .course-date__class
+        display flex
+        justify-content space-between
+        height 196px
+        padding 49px 26px
+        border-bottom 1px solid #E5E5E5
+
+        .course-seat
+          display flex
+
+          .avatar
+            width 98px
+            height 98px
+            border-radius 100%
+            border 1px solid #ebebeb
+            margin-right 15px
+
+          .course-desc
+            display flex
+            flex-direction column
+            justify-content space-between
+
+            .course-name
+              font-weight bold
+              font-size 32px
+
+            .course-place
+              color #666
+              font-size 28px
+
+        .course-time
+          color #666
+          font-size 26px

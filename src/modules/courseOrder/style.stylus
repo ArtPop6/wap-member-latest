@@ -1,0 +1,290 @@
+body
+  background-color #fff !important
+  height 100%
+
+.course
+  display flex
+  flex-direction column
+  width 750px
+  height 100%
+
+  .header
+    width 750px
+    height 124px
+    background linear-gradient(-180deg, #F3D825 0%, #FFDE00 100%)
+
+  .title
+    position absolute
+    top 28px
+    left 22px
+    width 706px
+    height 192px
+    background #FFFFFF
+    border-radius 12px
+    box-shadow 0 0 6px 0 rgba(229,229,229,1)
+
+    .title__left
+      position absolute
+      top 56px
+      left 26px
+      width 96px
+      height 96px
+      border-radius 100%
+      // background red
+
+      .title__left--img
+        width 96px
+        height 96px
+        border-radius 100%
+
+    .title__name
+      position absolute
+      font-family PingFangSC-Medium
+      font-size 32px
+      font-weight bold
+      color #0F0F0F
+      letter-spacing -0.52px
+      text-align right
+      top 52px
+      left 144px
+
+    .title__type
+      position absolute
+      top 118px
+      left 144px
+      font-family PingFangSC-Regular
+      font-size 24px
+      color #0F0F0F
+      letter-spacing -0.4px
+      text-align right 
+
+    .title__price
+      position absolute
+      font-weight bold
+      top 76px
+      right 22px
+      font-family PingFangTC-Semibold
+      font-size 40px
+      color #0F0F0F
+      letter-spacing -0.66px
+      text-align right
+
+  .container
+    display flex
+    flex-direction column
+    align-items center
+    flex 1
+    width 750px
+    background #fafafa
+
+    .container__center
+      display flex
+      flex-direction column
+      width 706px
+      margin-top 120px
+      padding 28px 24px 0 20px
+      background #FFFFFF
+      border-radius 12px
+
+      // .center__time
+      //   display flex
+      //   align-items center
+      //   height 96px
+        
+      //   .center__time--icon
+      //     width 10px
+      //     height 28px
+      //     background-image linear-gradient(-180deg, #F3D825 0%, #FFDE00 100%)
+      //     border-radius 6px
+
+      //   .center__time--title
+      //     margin-left 12px
+      //     font-family PingFangSC-Medium
+      //     font-size 32px
+      //     color #0F0F0F
+      //     letter-spacing -0.52px
+      //     text-align right
+
+      // .center__section
+      //   display flex
+      //   flex-wrap wrap
+
+      //   .center__section--time
+      //     margin 0 6px 28px 6px
+      //     border 1px solid #E1E1E1
+      //     border-radius 43px
+      //     text-align center
+      //     line-height 64px
+      //     font-size 22px
+      //     color#7F7F7F
+      //     width 152px
+      //     height 64px
+
+      // .center__line
+      //   border 1px solid #F5F5F5
+      //   margin-top 6px
+      //   margin-bottom 34px
+
+      .center__info
+        display flex
+        justify-content space-between
+        margin-bottom 28px
+
+        .center__info--type
+          font-family PingFangSC-Regular
+          font-size 28px
+          color #3B3B3B
+          letter-spacing -0.46px
+          text-align right
+
+        .center__info--time
+          font-family PingFangSC-Regular
+          font-size 30px
+          color #0F0F0F
+          letter-spacing -0.5px
+          text-align right
+
+    .container__pay
+      display flex
+      flex-direction column
+      width 706px
+      height auto
+      margin-top 24px
+      padding 0 24px 0 20px
+      background #FFFFFF
+      border-radius 12px              
+
+      .pay__time
+        display flex
+        align-items center
+        height 96px
+        
+        .pay__time--icon
+          width 10px
+          height 28px
+          background-image linear-gradient(-180deg, #F3D825 0%, #FFDE00 100%)
+          border-radius 6px
+
+        .pay__time--title
+          margin-left 12px
+          font-family PingFangSC-Medium
+          font-size 32px
+          color #0F0F0F
+          letter-spacing -0.52px
+          text-align right
+
+      .pay__way
+        display flex
+        height auto
+
+        .way__select
+          display flex
+          width 706px
+
+          .way__wx
+            font-family PingFangSC-Semibold
+            font-size 28px
+            color #3B3B3B
+            letter-spacing -0.46px
+            text-align right
+
+          .way__price
+            position absolute
+            right 46px
+            font-family PingFangSC-Regular
+            font-size 30px
+            color #0F0F0F
+            letter-spacing -0.5px
+            text-align right
+
+          .way__discounts
+            // display block
+            margin-left 6px
+            padding 8px
+            width 38px
+            height 20px
+            font-family PingFangSC-Regular
+            font-size 22px
+            color #0F0F0F
+            letter-spacing -0.25px
+            text-align right
+            opacity 0.5
+            background-image linear-gradient(-180deg, #FFDE00 0%, #FFDE00 100%)
+            border-radius 8px
+
+          .way__package
+            position absolute
+            right 46px
+            font-family PingFangSC-Regular
+            font-size 30px
+            color #0F0F0F
+            letter-spacing -0.5px
+            text-align right  
+
+          .way__img
+            // position absolute
+            // right 46px
+            width 30px
+            height 40px 
+
+    .container__foot
+      display flex
+      flex-direction column
+      width 706px
+      height auto 
+
+      .container__rule
+        font-family PingFangSC-Semibold
+        margin-top 14px
+        font-size 24px
+        color #727272
+        letter-spacing -0.4px
+        text-align left
+
+      .container__text
+        display flex
+        margin 8px 0
+        font-family PingFangSC-Regular
+        font-size 20px
+        color #727272
+        letter-spacing -0.16px
+        flex-wrap wrap              
+
+  .foot
+    display flex
+    justify-content space-between
+    align-items center
+    padding 0 22px 
+    width 750px
+    height 100px
+    background rgba(255,255,255,0.70)
+    box-shadow 0 0 5px 0 rgba(0,0,0,0.04)
+
+    .foot__price
+      font-family PingFangSC-Semibold
+      font-size 28px
+      color #0F0F0F
+      letter-spacing -1.1px
+      text-align right
+      font-weight bold
+
+    .foot__affirm
+      background-image linear-gradient(-180deg, #FFDE00 0%, #FFDE00 100%)
+      border-radius 38px
+      width 178px
+      height 74px
+      font-family PingFangSC-Regular
+      font-size 28px
+      color #000000
+      letter-spacing -0.31px
+      text-align center
+      line-height 74px  
+
+.van-radio
+  margin-bottom 38px
+
+.van-radio__label
+  line-height none          
+
+
+

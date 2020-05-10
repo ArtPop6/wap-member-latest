@@ -1,0 +1,302 @@
+.personal-trainer
+  //background #fafafc
+  height 100%
+  background #fff
+  display flex
+  flex-direction column
+
+  .student-info__wrap
+    //display flex
+    width 100%
+    padding 33px 38px 28px 33px
+    justify-content space-between
+    border-bottom 1px solid #ebebeb
+    align-items flex-start
+    background $primary-color
+
+    .class-desc
+      display flex
+      justify-content space-between
+      margin-bottom 20px
+
+      .class-name__desc
+        display flex
+        align-items center
+
+        .class-name__title
+          margin-left 10px
+          font-weight bold
+          margin-right 10px
+
+        .class-name
+          padding 2px 13px
+          background #E6C805
+          color #fff
+          font-weight 500
+          font-size 28px
+          border-radius 8px
+          text-align center
+
+      .coach-desc
+        display flex
+        align-items center
+        justify-content flex-start
+
+        .coach-title
+          font-weight bold
+          margin-right 10px
+          margin-left 10px
+
+        .coach-name
+          padding 2px 13px
+          background #E6C805
+          color #fff
+          font-weight 500
+          font-size 28px
+          border-radius 8px
+          text-align center
+
+    .class-time__desc
+      display flex
+      align-items center
+
+      .class-time__title
+        font-weight bold
+        margin-right 10px
+        margin-left 10px
+
+      .class-time
+        padding 2px 13px
+        background #E6C805
+        color #fff
+        font-weight 500
+        font-size 28px
+        border-radius 8px
+        text-align center
+
+  .class-proccess
+    flex 1
+    overflow auto
+    padding 20px
+
+    //.class-plan__wrap::before
+    //  content ''
+    //  position absolute
+    //  width 0
+    //  height 0
+    //  top 0
+    //  right 0
+    //  border-top 20px solid #fff
+    //  border-right 20px solid #fff
+    //  border-bottom 14px solid #f7f7f7
+    //  border-left 14px solid #f7f7f7
+    //  z-index 1000
+
+
+    .class-plan__wrap
+      position relative
+      padding 25px 25px 30px 25px
+      background #fff
+      margin-bottom 22px
+      border-radius 8px
+      box-shadow 0px 2px 9px 0px rgba(0, 0, 0, 0.08)
+
+      .class-plan
+        font-weight bold
+        margin-bottom 15px
+
+      .van-uploader
+        .van-uploader__wrapper
+          .van-uploader__preview
+            margin-right 18px
+
+            .van-uploader__preview-image
+              border 1px solid #ebebeb
+
+          .van-uploader__upload
+            width 110px
+            height 110px
+            border 1px solid #ebebeb
+            margin-bottom 15px
+
+            .van-icon
+              font-size 36px
+
+      .no-picture__wrap
+        margin-bottom 12px
+        display flex
+        flex-direction column
+        align-items center
+
+        .no-picture
+          width 170px
+          height 98px
+
+        .no-picture__text
+          font-size 28px
+          font-weight bold
+          color #666
+
+      .log-content
+        width 100%
+        padding-top 18px
+        display flex
+        justify-content space-between
+        border-top 1px solid #ebebeb
+
+        .pt-avatar
+          width 95px
+          height 95px
+          border 2px solid #EBEBEB
+          -webkit-border-radius 100%
+          -moz-border-radius 100%
+          border-radius 100%
+
+        .log-text::before
+          content ''
+          position absolute
+          width 0
+          height 0
+          left -23px
+          top 13px
+          border-right 13px solid #ebebeb
+          border-bottom 13px solid #fff
+          border-top 13px solid #EBEBEB
+          border-left 13px solid #fff
+          z-index 999
+
+        .log-text
+          position relative
+          width 80%
+          padding 10px
+          font-size 27px
+          color #888
+          word-wrap break-word
+          background #ebebeb
+          border-radius 8px
+          box-shadow 0px 2px 9px 0px rgba(0, 0, 0, 0.08)
+
+          .has-text
+            width 100%
+            word-wrap break-word
+
+          .no-text
+            width 100%
+
+    //box-shadow inset 0 2px 10px -5px #191919
+
+    .class-summary__wrap
+      padding 25px 25px 30px 25px
+      background #fff
+      box-shadow 0px 2px 6px 0px rgba(0, 0, 0, 0.08)
+
+      .class-summary
+        font-weight bold
+        margin-bottom 15px
+
+      .van-uploader
+        .van-uploader__wrapper
+          .van-uploader__preview
+            margin-right 18px
+
+            .van-uploader__preview-image
+              border 1px solid #ebebeb
+
+          .van-uploader__upload
+            width 110px
+            height 110px
+            border 1px solid #ebebeb
+            margin-bottom 15px
+
+            .van-icon
+              font-size 36px
+
+      .no-picture__wrap
+        margin-bottom 12px
+        display flex
+        flex-direction column
+        align-items center
+
+        .no-picture
+          width 170px
+          height 98px
+
+        .no-picture__text
+          font-size 28px
+          font-weight bold
+          color #666
+
+      .log-content
+        width 100%
+        padding-top 18px
+        display flex
+        justify-content space-between
+        border-top 1px solid #ebebeb
+
+        .pt-avatar
+          width 95px
+          height 95px
+          border 2px solid #EBEBEB
+          -webkit-border-radius 100%
+          -moz-border-radius 100%
+          border-radius 100%
+
+        .log-text::before
+          content ''
+          position absolute
+          width 0
+          height 0
+          left -24px
+          top 13px
+          border-right 13px solid #ebebeb
+          border-bottom 13px solid #fff
+          border-top 13px solid #ebebeb
+          border-left 13px solid #fff
+
+        .log-text
+          position relative
+          width 80%
+          font-size 27px
+          color #888
+          padding 10px
+          background #ebebeb
+          box-shadow 0px 2px 9px 0px rgba(0, 0, 0, 0.08)
+          border-radius 8px
+
+          .has-text
+            width 100%
+            word-wrap break-word
+
+          .no-text
+            width 100%
+
+  .sign-up__wrap
+    height 110px
+    width 100%
+    display flex
+    justify-content space-around
+
+    .sign-up
+      height 72px
+      width 90%
+      background $primary-color
+      line-height 72px
+      color #fff
+      font-weight bold
+      text-align center
+      border-radius 10px
+      box-shadow 3px 3px 5px 0px rgba(0, 0, 0, 0.04)
+      text-shadow 3px 3px 5px rgba(0, 0, 0, 0.04)
+
+    .disableSign
+      opacity 0.36
+      height 72px
+      width 90%
+      background $primary-color
+      line-height 72px
+      color #fff
+      font-weight bold
+      text-align center
+      border-radius 10px
+      box-shadow 3px 3px 5px 0px rgba(0, 0, 0, 0.04)
+      text-shadow 3px 3px 5px rgba(0, 0, 0, 0.04)

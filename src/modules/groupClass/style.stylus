@@ -1,0 +1,420 @@
+body
+  background-color #fff !important
+  height 100%
+  width 100%
+
+  .van-toast
+    .van-toast__text
+      font-size 28px
+      padding 13px 10px
+      border-radius 8px
+
+  .van-pull-refresh__head
+    font-size 28px
+
+    .van-loading__text
+      font-size 24px
+
+  .v-enter, .v-leave-to
+    opacity 0
+    transform translateY(-88px)
+
+  .v-enter-active, .v-leave-active
+    transition all 0.4s ease
+
+  .city-store__content
+    position absolute
+    top 390px
+    z-index 2
+    width 100%
+    display flex
+    height auto
+    background #fff
+    box-shadow 0 2px 13px 0 rgba(0, 0, 0, 0.03)
+
+    .citys-content
+      display flex
+      flex-direction column
+      width 158px
+      border-right 1px solid #f1f1f1
+
+      .citys
+        width 100%
+        height 70px
+        font-size 28px
+
+        .city-store__store
+          width 158
+          height 70px
+          text-align center
+          line-height 70px
+
+      .city-change
+        background #fef5b7
+        border-left 6px solid #fcdb00
+        font-weight 550
+
+    .stores-content
+      flex 1
+      height auto
+      background #fff
+      max-height 600px
+      overflow auto
+
+      .stores
+        width 100%
+        height 104px
+        padding 16px 24px 16px 48px
+
+        .city-store__store
+          display flex
+          justify-content space-between
+          align-items center
+          margin-bottom 4px
+
+          .store-name
+            height 36px
+            font-size 26px
+            font-weight 550
+
+          .store-distance
+            height 32px
+            font-size 22px
+            color #7f7f7f
+
+        .city-store__place
+          color #7f7f7f
+          font-size 22px
+
+      .store-change
+        background #fef5b7
+
+  .class-type__content
+    position absolute
+    top 390px
+    width 100%
+    z-index 2
+    display flex
+    flex-direction column
+    height auto
+    background #fff
+    box-shadow 0 2px 13px 0 rgba(0, 0, 0, 0.03)
+
+    .select-area
+      padding 14px 20px 50px 26px
+      height auto
+
+      .class-tag
+        .class-tag__title
+          width 56px
+          height 36px
+          font-size 26px
+          text-align left
+          color #0f0f0f
+          margin-bottom 18px
+
+        .class-tag__content
+          width 100%
+          display flex
+          margin-bottom 30px
+          margin-right 5px
+          overflow auto
+
+          .tag-name
+            padding 14px 50px
+            flex-shrink 0
+            font-size 28px
+            border-radius 43px
+            border 1px solid #e1e1e1
+            margin-right 36px
+
+          .tagChange
+            background #fcdb00
+            border 1px solid #fcdb00
+            font-weight 550
+            color #fff
+            box-shadow 3px 3px 5px 0px rgba(0, 0, 0, 0.04)
+            text-shadow 3px 3px 5px rgba(0, 0, 0, 0.04)
+
+      .class-type
+        .class-type__title
+          width 56px
+          height 36px
+          font-size 26px
+          text-align left
+          color #0f0f0f
+          margin-bottom 18px
+
+        .class-type__tag
+          width 100%
+          display flex
+          overflow auto
+
+          .class-type__name
+            flex-shrink 0
+            padding 14px 50px
+            font-size 28px
+            border-radius 43px
+            border 1px solid #e1e1e1
+            margin-right 36px
+
+          .typeChange
+            background #fcdb00
+            border 1px solid #fcdb00
+            font-weight 550
+            color #fff
+            box-shadow 3px 3px 5px 0px rgba(0, 0, 0, 0.04)
+            text-shadow 3px 3px 5px rgba(0, 0, 0, 0.04)
+
+    .class-button
+      display flex
+      height 75px
+      border-top 1px solid #f1f1f1
+      font-size 28px
+
+      .class-button__reset
+        width 375px
+        text-align center
+        line-height 75px
+
+      .class-button__select
+        width 375px
+        font-weight 550
+        text-align center
+        line-height 75px
+        background-image linear-gradient(-180deg, #F3D825 0%, #FFDE00 100%)
+
+  .group-class
+    height 100%
+    display flex
+    flex-direction column
+
+    .course
+      height 132px
+
+    .filter
+      display flex
+      align-items center
+      justify-content space-between
+      padding 32px 26px 22px 0
+      height 98px
+      width 100%
+      border-bottom 1px solid rgba(0, 0, 0, 0.03)
+
+      .filter-stores
+        display flex
+        align-items center
+        margin-left 26px
+
+        .filter-icon
+          width 10px
+          height 28px
+          border-radius 6px
+          background-image linear-gradient(-180deg, #F3D825 0%, #FFDE00 100%)
+          margin-right 16px
+
+        .filter-store
+          font-weight 550
+          font-size 32px
+
+        .filter-switch
+          width 0
+          height 0
+          border-bottom 12px solid transparent
+          border-top 12px solid #2e2e2e
+          border-right 8px solid transparent
+          border-left 8px solid transparent
+          margin-left 14px
+          opacity 0.87
+          transform translate(0, 7px)
+
+        .filter-switch:active
+          animation 3s rotateswitch
+
+        @keyframes rotateswitch
+          from
+            transform rotate(0)
+
+          to
+            transform rotate3d(0, 0, 180deg)
+
+      .filter-class
+        width 68px
+        height 34px
+        text-align center
+        font-size 24px
+        color #0b9aff
+        display flex
+
+        .filter-class__title
+          line-height 34px
+
+        .filter-class__icon
+          width 0
+          height 0
+          border-bottom 10px solid transparent
+          border-top 10px solid linear-gradient(-138deg, #7FC8FD 0%, #0396FF 100%)
+          border-right 6px solid transparent
+          border-left 6px solid transparent
+          margin-left 4px
+          opacity 0.87
+          transform translate(0, 7px)
+
+    .overlay::-webkit-scrollbar
+      display none
+
+    .overlay
+      flex 1
+      // height 500px
+      overflow auto
+      position relative
+
+      .overlay-parent
+        height 100%
+        display flex
+        flex-direction column
+        position relative
+
+        .course-content::-webkit-scrollbar
+          display none
+
+        .course-content
+          height 100%
+          overflow auto
+
+          .van-pull-refresh
+            .van-pull-refresh__track
+              .van-pull-refresh__head
+                .van-loading
+                  .van-loading__text
+                    font-size 26px
+
+              .van-list
+                .van-cell
+                  height 174px
+                  padding 23px 24px 23px 30px
+
+                  .van-cell__value
+                    display flex
+                    justify-content space-between
+
+                    .class__left
+                      display flex
+
+                      .avatar
+                        width 128px
+                        height 128px
+                        border-radius 100%
+                        margin-right 18px
+                        border 1px solid #ebebeb
+
+                      .desc
+                        display flex
+                        flex-direction column
+                        justify-content space-between
+                        align-items start
+
+                        .class-type__name
+                          margin-bottom 8px
+                          font-size 30px
+                          height 40px
+                          color #0f0f0f
+                          display flex
+                          align-items center
+
+                          .class-type__title
+                            width auto
+                            height 40px
+                            line-height 40px
+                            font-weight 550
+                            margin-right 10px
+
+                          .hot
+                            width 22px
+                            height 26px
+                            margin-bottom 3px
+
+                        .class-type__price
+                          height 40px
+                          width auto
+                          font-size 32px
+                          color #0f0f0f
+                          line-height 40px
+                          margin-bottom 8px
+                          font-weight 540
+                          letter-spacing -0.26px
+
+                        .class-type__num
+                          height 34px
+                          width auto
+                          font-size 24px
+                          line-height 34px
+                          text-align left
+                          color #2e2e2e
+
+                    .button
+                      display flex
+                      flex-direction column
+                      justify-content flex-end
+
+                      .goAppoint
+                        width 152px
+                        height 74px
+                        border-radius 43px
+                        background-image linear-gradient(-180deg, #F3D825 0%, #FFDE00 100%)
+                        line-height 74px
+                        text-align center
+                        margin-bottom 8px
+                        font-size 28px
+                        font-weight bold
+                        //color #0f0f0f
+                        color #fff
+                        text-shadow 3px 3px 5px rgba(0, 0, 0, 0.04)
+                        box-shadow 3px 3px 5px 0px rgba(0, 0, 0, 0.04)
+
+                      .full
+                        background #E1E1E1
+
+                      .null
+                        // background-image linear-gradient(-180deg, #F3D825 0%, #FFDE00 100%)
+                        background-image linear-gradient(to right, #F3D825, #FFDE00)
+
+                      .appoint-state
+                        height 34px
+                        line-height 34px
+                        width 152px
+                        height 34px
+                        text-align center
+                        font-size 24px
+
+                .van-list__loading
+                  height 110px
+
+                  .van-loading__text
+                    font-size 28px
+
+              .van-list__finished-text
+                height 120px
+                font-size 26px
+
+        .zhezhao
+          position absolute
+          top 0
+          left 0
+          bottom 0
+          right 0
+          background #dbd8c7
+          opacity 0.35
+
+    // .overlay-over
+    //   position absolute
+    //   top 0
+    //   left 0
+    //   right 0
+    //   bottom 0
+    //   background rgba(0, 0, 0, .3)
+    //   z-index -1
+
+    .tab-bar
+      height 98px
+      z-index 100

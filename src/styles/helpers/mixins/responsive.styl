@@ -1,0 +1,28 @@
+
+
+sm-screen()
+  @media (max-width: $screen-sm-max)
+    {block}
+md-screen()
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max)
+    {block}
+lg-screen()
+  @media (min-width: $screen-lg-min)
+    {block}
+
+not-sm-screen()
+  @media (min-width: $screen-md-min)
+    {block}
+// not-md-screen()
+//   @media not (min-width: $screen-md-min) and (max-width: $screen-md-max)
+//     {block}
+not-lg-screen()
+  @media (max-width: $screen-md-max)
+    {block}
+
+screen-container-width()
+  width $screen-sm
+  +md-screen()
+    width $screen-md
+  +lg-screen()
+    width $screen-lg

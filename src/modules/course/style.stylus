@@ -1,0 +1,270 @@
+body
+  background-color #fff !important
+
+.v-enter, .v-leave-to
+  opacity 0
+  transform translateY(-88px)
+
+.v-enter-active, .v-leave-active
+  transition all 0.4s ease
+
+.personal
+  display flex
+  flex-direction column
+  width 750px
+  height 100%
+  // margin 0 auto
+  background #fafafc
+
+  .class-tab
+    height 132px
+
+  .personal_top
+    width 750px
+    height 88px
+    background-color #FDE001
+    background #fff
+    overflow-x hidden
+    // box-shadow 0px 8px 10px rgba(229, 229, 229, 1)
+
+    .personal_top-head
+      display flex
+      align-items center
+      position fixed
+      z-index 2
+      height 88px
+      width 750px
+      background #fff
+      box-shadow 0px 8px 10px rgba(229, 229, 229, 1)
+      border-bottom 1px solid #f1f1f1
+      // box-shadow 0px 10px 6px 6px rgba(229, 229, 229, 1)
+
+      .personal_top-headimg
+        padding-left 27px
+        width 64px
+        height 40px
+
+      .personal_top-headspan
+        display block
+        padding-left 10px
+        font-size 28px
+        font-weight 500
+        margin-top 4px
+        color rgba(43, 44, 49, 1)
+
+      .personal_top-headlogo
+        width 130px
+        height 60px
+        margin-left 190px
+
+      .personal_top-screen
+        width 124px
+        height 44px
+        position absolute
+        font-size 28px
+        font-weight 500
+        margin-top 4px
+        right 30px
+        background url('../../assets/stores/sousuo.png') center right no-repeat
+
+    .personal_top-show
+      width 750px
+      height auto
+      position fixed
+      z-index 2
+      // top 88px
+      top 220px
+      background #fff
+
+      .personal_top-region
+        display flex
+        flex-direction column
+        height auto
+        width 750px
+
+        .personal_top-area
+          margin-left 32px
+          margin-top 20px
+          width 100px
+          height 37px
+          font-size 26px
+          font-family PingFangSC-Medium, PingFang SC
+          font-weight 500
+          color rgba(0, 0, 0, 1)
+          line-height 37px
+
+        .personal_top-bottom
+          display flex
+          flex-wrap wrap
+          width 750px
+          margin-left 18px
+          font-size 0
+
+          .posnal-top_areaname
+            width 120px
+            height 48px
+            color #FFFFFF
+
+          .posnal-top_name
+            color #666
+            width auto
+            height 70px
+            font-family PingFangSC-Regular, PingFang SC
+            font-weight 400
+            text-align center
+            font-size 28px
+            border-radius 10px
+            margin 10px 0 10px 20px
+            padding 14px
+            line-height 42px
+            border 1px solid #ebebeb
+            background #fff
+
+          .posnal-top_selectname
+            background-color $primary-color
+            border none
+            color #fff
+            font-weight bold
+            box-shadow 3px 3px 5px 0px rgba(0, 0, 0, 0.04)
+            text-shadow 3px 3px 5px rgba(0, 0, 0, 0.04)
+
+      .personal_top-footer
+        display flex
+        width 750px
+        height 88px
+        margin-top 10px
+        border-top 2px solid #f1f1f1
+
+        .personal_top-noshow
+          width 375px
+          height 88px
+          text-align center
+          font-size 28px
+          line-height 88px
+          background #fff
+          color #000
+          font-weight 500
+          border-bottom 2px solid #f1f1f1
+
+        .personal_top-comfir
+          width 375px
+          height 88px
+          text-align center
+          font-size 28px
+          line-height 88px
+          font-weight 500
+          background $primary-color
+          color #000
+          border-bottom 2px solid #f1f1f1
+
+  .personal_center::-webkit-scroll
+    display none
+
+  .personal_center
+    display flex
+    align-content center
+    flex-direction column
+    width 750px
+    // height 100%
+    flex 1
+    overflow auto
+    // top 300px
+    background #FAFAFC
+
+
+    .personal_center-search
+      display flex
+      flex-direction column
+      justify-content center
+      align-items center
+      height 100%
+
+      .personal_center-hint
+        margin-top 20px
+        color #c0c0c0
+
+    .personal_center-shop
+      display flex
+      flex-direction column
+      width 710px
+      margin 20px
+      height auto
+      background #FFFFFF
+      box-shadow 0px 0px 6px 6px rgba(229, 229, 229, 1)
+
+      .personal_center-shopname
+        font-weight bold
+        padding 14px
+        font-size 32px
+        border-bottom 1px solid #E5E5E5
+        background #FFFFFF
+        color #2B2C31
+
+        .personal_center-shopimg
+          width 34px
+          height 40px
+
+      .personal_center-img
+        display flex
+        width 710px
+        height 360px
+        border-bottom 1px solid #E5E5E5
+
+        .personal_center-coach
+          padding 29px 20px
+          width 320px
+          height 360px
+          margin-bottom 10px
+
+          img
+            width 276px
+            height 302px
+
+        .personal_center-right
+          position relative
+          display flex
+          flex-direction column
+          padding 29px 20px
+          width 390px
+          height 360px
+
+          .personal_center-rightspan
+            font-size 36px
+            font-weight bold
+
+          .personal_center-rightdetails
+            width 340px
+            color #777A88
+            word-break break-all
+            word-wrap break-word
+            font-size 24px
+            overflow hidden
+            text-overflow ellipsis
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 4
+            line-height 40px
+            height 156px
+
+          .personal_center-rightbutton
+            position absolute
+            width 256px
+            height 60px
+            font-size 24px
+            text-align center
+            background #FCDB00
+            left 64px
+            bottom 30px
+            line-height 60px
+            border-radius 10px
+
+    .over-lay
+      position fixed
+      height 100%
+      width 100%
+      background #dbd8c7
+      opacity 0.38
+
+  .tab-bar
+    height 98px
+    z-index 100

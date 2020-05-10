@@ -1,0 +1,292 @@
+body
+  // background-color #fff !important
+  height 100%
+
+.order-wrap
+  display flex
+  flex-direction column
+  width 750px
+  height 100%
+  background #fafafc
+
+  .user-info
+    width 750px
+    height 168px
+    background $primary-color
+
+    .user-info__container
+      display flex
+      align-items center
+      width 750px
+      height 168px
+
+      .user-info__avatar
+        display flex
+        justify-content center
+        align-items center
+        width 104px
+        height 104px
+        margin-left 45px
+
+        .user-info__img
+          width 88px
+          height 88px
+          background rgba(216, 216, 216, 1)
+          border 2px solid rgba(255, 255, 255, 1)
+
+      .user-info__message
+        display flex
+        flex-direction column
+        justify-content center
+        width 390px
+        height 104px
+        padding-left 20px
+
+        .user-info__message--name
+          width auto
+          height 45px
+          font-size 32px
+          font-family PingFangSC-Medium, PingFang SC
+          font-weight bold
+          color rgba(0, 0, 0, 1)
+          line-height 45px
+
+        .user-info__message--tele
+          width auto
+          height 40px
+          font-size 28px
+          font-family PingFangSC-Medium, PingFang SC
+          font-weight bold
+          color rgba(0, 0, 0, 0.5)
+          line-height 40px
+
+      .user-info__container--img
+        width 211px
+        height 168px
+
+  .filter-bar
+    display flex
+    padding 0 20px
+    height 110px
+    align-items center
+    box-shadow 0px 3px 6px 0px rgba(0, 0, 0, .1)
+
+    .button-style
+      text-align center
+      height 68px
+      width 160px
+      line-height 68px
+      background #fff
+      color #666
+      font-weight bold
+      font-size 30px
+      box-shadow 0px 2px 6px 0px rgba(0, 0, 0, .1)
+      margin-right 26px
+      border 1px solid #ebebeb
+      border-radius 13px
+
+    .act-type
+      background #fcdb00
+      font-weight 600
+      color #fff
+
+  .van-list .van-cell:after
+    border none
+
+  .van-list::-webkit-scrollbar
+    display none
+
+  .van-list
+    flex 1
+    overflow auto
+
+    .van-list__loading
+      .van-loading
+        .van-loading__text
+          font-size 28px
+
+    .van-cell
+      width 100%
+      padding 20px
+      border none
+      background #fafafc
+
+      .van-cell__value
+        box-shadow 0px 2px 6px 0px rgba(0, 0, 0, .1)
+
+        .order-group
+          display flex
+          width 710px
+          height 100%
+          align-items center
+          // margin-bottom 25px
+          background #FFFFFF
+          border-radius 8px
+          // box-shadow 0px 3px 8px 0px #e0e0e0
+
+
+          .order-group__item
+            position relative
+            width 100%
+            height 100%
+
+            .order-group__number
+              display flex
+              width 100%
+              height 72px
+              justify-content space-between
+              padding 10px 15px
+              // box-shadow 0 1px 0 0 rgba(229, 229, 229, 1)
+              border-bottom 1px solid #E5E5E5
+              font-size 28px
+
+              .order-group__number--desc
+                display flex
+
+                .order-group__number--title
+                  // width 150px
+                  // height 40px
+                  line-height 52px
+                  color #777A88
+
+                .order-group__number--num
+                  line-height 52px
+
+              .order-group__state
+                padding 1px 3px
+                color #000
+                line-height 52px
+                font-size 28px
+
+              .success
+                color #2B9E2F
+
+              .wait
+                color #F49C0D
+
+              .close
+                color #E61111
+
+            .order-group__item--wrap
+              display flex
+              justify-content space-between
+              align-items center
+              padding 10px 15px
+
+              .right-arrow
+                width 55px
+                height 42px
+                padding 6px 3px 6px 25px
+
+            .card
+              height 214px
+              width 100%
+              padding 25px 20px 25px 20px
+              display flex
+              justify-content space-between
+              // box-shadow 0 1px 0 0 rgba(229, 229, 229, 1)
+              border-bottom 1px solid #E5E5E5
+
+              .card-pic
+                width 320px
+                height 100%
+
+                .card-pic__url
+                  width 100%
+                  height 100%
+
+              .card__desc
+                // flex 1
+                // margin-left 30px
+                width 330px
+
+                .card-name
+                  display flex
+                  width 100%
+                  height 45px
+                  justify-content space-between
+                  align-items center
+
+                  .type-name
+                    color #000
+                    font-size 32px
+                    font-weight bold
+                    line-height 45px
+                    white-space nowrap
+                    overflow hidden
+
+                  .type-time
+                    color #fff
+                    font-size 22px
+                    text-align center
+                    line-height 32px
+                    border-radius 3px
+                    height 32px
+                    padding 0 3px
+
+                  .yellow
+                    background #fcdb00
+
+                  .orange
+                    background #FFA97D
+
+                  .blue
+                    background #87B2FF
+
+                  .pink
+                    background #FF89A9
+
+                  .default
+                    background grey
+
+                .card-site
+                  font-size 28px
+                  color #777A88
+                  // margin-top 5px
+                  width 100%
+                  height 40px
+                  line-height 40px
+                  white-space nowrap
+                  overflow hidden
+
+                .card__price
+                  width 100%
+                  display flex
+                  flex-direction column
+                  justify-content space-between
+                  align-items flex-end
+                  overflow hidden
+                  // margin-top 20px
+
+                  .pay-price
+                    font-size 32px
+                    // margin-bottom 3px
+                    height 42px
+                    line-height 42px
+
+                  .pay-num
+                    color #777A88
+                    font-size 28px
+                    height 40px
+                    line-height 40px
+
+            .order__detail
+              width 100%
+              height 72px
+              padding 15px
+              color #777A88
+              display flex
+              flex-direction row-reverse
+              align-items center
+
+              .order__detail--desc
+                font-size 28px
+
+              .order__detail--price
+                font-size 30px
+                color #000
+                font-weight 380
+
+    .van-list__finished-text
+      font-size 28px
+      margin-bottom 18px

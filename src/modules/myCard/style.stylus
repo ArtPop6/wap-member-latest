@@ -1,0 +1,209 @@
+body
+  background-color #fff !important
+  height 100%
+
+.van-pull-refresh__head
+  font-size 24px  
+
+.van-loading__text
+  font-size 24px
+  
+.mycard
+  display flex
+  flex-direction column
+  width 750px
+  height 100%
+  background #E5E5E5
+
+  .cardheader
+    width 750px
+    height 168px
+    background $primary-color
+
+    .cardheader_foot
+      display flex
+      align-items center
+      width 750px
+      height 168px
+
+      .cardheader_foot-left
+        display flex
+        justify-content center
+        align-items center
+        width 104px
+        height 104px
+        margin-left 45px
+
+        .cardheader_foot-photo
+          width 88px
+          height 88px
+          background rgba(216,216,216,1)
+          border 2px solid rgba(255,255,255,1)
+
+      .cardheader_foot-right
+        display flex
+        flex-direction column
+        justify-content center
+        width 390px
+        height 104px
+        padding-left 20px
+
+        .cardheader_foot-rtname
+          width auto
+          height 45px
+          font-size 32px
+          font-family PingFangSC-Medium, PingFang SC
+          font-weight bold
+          color rgba(0, 0, 0, 1)
+          line-height 45px
+
+        .cardheader_foot-rtphone
+          width auto
+          height 40px
+          font-size 28px
+          font-family PingFangSC-Medium, PingFang SC
+          font-weight bold
+          color rgba(0, 0, 0, 0.5)
+          line-height 40px
+
+      .cardheader_foot-rtimg
+        width 211px
+        height 168px
+
+  .cardcenter
+    overflow-y auto
+    flex 1
+    width 750px
+    height 100%
+    padding 0 20px 20px
+    background #fafafc
+
+    .cardcenter_card
+      display flex
+      width 710px
+      height 226px
+      align-items center
+      margin 20px 0
+      background #FFFFFF
+      box-shadow 0px 0px 6px 6px rgba(229, 229, 229, 1)
+
+      .cardcenter_card-right
+        position relative
+        width 270px
+        height 186px
+        margin-left 20px
+
+        .cardcenter_card-rtimg
+          width 270px
+          height 186px
+          // background rgba(43,44,49,1)
+          box-shadow 0px 2px 8px 0px rgba(0,0,0,0.1),0px 2px 8px 0px rgba(0,0,0,0.1)
+          border-radius 20px
+
+        .cardcenter_card-nvshen
+          position absolute
+          left 20px
+          bottom 50px
+          width auto
+          height 45px
+          font-size 32px
+          font-family PingFangSC-Medium, PingFang SC
+          font-weight bold
+          color rgba(245, 237, 188, 1)
+          line-height 45px
+          text-shadow 0px 2px 8px rgba(0, 0, 0, 0.1), 0px 2px 8px rgba(0, 0, 0, 0.1)
+
+      .cardcenter_card-left
+        display flex
+        position relative
+        flex-direction column
+        width 440px
+        height 186px
+        padding-left 30px
+
+        .cardcenter_card-name
+          width auto
+          height 45px
+          font-size 32px
+          font-family PingFangSC-Medium, PingFang SC
+          font-weight bold
+          color rgba(43, 44, 49, 1)
+          line-height 45px
+          text-shadow 0px 2px 8px rgba(0, 0, 0, 0.1), 0px 2px 8px rgba(0, 0, 0, 0.1)
+
+        .cardcenter_card-dated
+          width auto
+          height 40px
+          font-size 28px
+          margin-top 10px
+          font-family PingFangSC-Regular, PingFang SC
+          font-weight 400
+          color rgba(119, 122, 136, 1)
+          line-height 40px
+          text-shadow 0px 2px 8px rgba(0, 0, 0, 0.1), 0px 2px 8px rgba(0, 0, 0, 0.1)
+
+        .cardcenter_card-time
+          position absolute
+          bottom 0
+          width auto
+          height 40px
+          font-size 28px
+          font-family PingFangSC-Regular, PingFang SC
+          font-weight 400
+          color rgba(119, 122, 136, 1)
+          line-height 40px
+          text-shadow 0px 2px 8px rgba(0, 0, 0, 0.1), 0px 2px 8px rgba(0, 0, 0, 0.1)
+
+        .cardcenter_card-notime
+          position absolute
+          bottom 0
+          width auto
+          height 40px
+          font-size 28px
+          font-family PingFangSC-Regular, PingFang SC
+          font-weight 400
+          color rgba(252, 204, 0, 1)
+          line-height 40px
+          text-shadow 0px 2px 8px rgba(0, 0, 0, 0.1), 0px 2px 8px rgba(0, 0, 0, 0.1)
+
+        .cardcenter_card-yestime
+          position absolute
+          bottom 0
+          width auto
+          height 40px
+          font-size 28px
+          font-family PingFangSC-Regular, PingFang SC
+          font-weight 400
+          color rgba(119, 112, 136, 1)
+          line-height 40px
+          text-shadow 0px 2px 8px rgba(0, 0, 0, 0.1), 0px 2px 8px rgba(0, 0, 0, 0.1)
+
+        .cardcenter_card-cardname
+          position absolute
+          right 20px
+          padding 10px
+          font-size 22px
+          font-family PingFangSC-Regular, PingFang SC
+          font-weight 400
+          color rgba(255, 255, 255, 1)
+          line-height 30px
+          width auto
+          height 32px
+          line-height 14px
+          border-radius 3px
+
+        .yellow
+          background #fcdb00
+
+        .orange
+          background #FFA97D
+
+        .blue
+          background #87B2FF
+
+        .pink
+          background #FF89A9
+
+        .default
+          background grey  
+        

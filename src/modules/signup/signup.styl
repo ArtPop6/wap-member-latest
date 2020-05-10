@@ -1,0 +1,139 @@
+body
+  // background-color $primary-color
+  background-image url('./assets/backround.jpg')
+  background-position center left
+  background-repeat no-repeat
+  // background-attachment fixed
+  background-size 220% 100%;
+
+  .app
+    width 100%
+    height 100%
+
+    .loading-wrap
+      width 100%
+      height 100%
+      background #fcdb00
+      display flex
+      justify-content space-around
+      position relative
+
+      .logo-pic
+        width 320px
+        height 180px
+        top 200px
+        animation up-down 2s infinite
+        margin-top 20px
+        position absolute
+
+        @keyframes up-down
+          0%
+            top 160px
+
+          50%
+            top 240px
+
+          100%
+            top 160px
+
+      .process-c
+        width 300px
+        height 20px
+        position absolute
+        border 5px solid #000
+        border-radius 10px
+        top 460px
+        background #fcdb00
+        overflow hidden
+
+        .process-v
+          width 20%
+          background-color #000
+          height 100%
+          -webkit-border-radius 10px
+          -moz-border-radius 10px
+          border-radius 10px
+          transition width .1s
+
+    .signup-wrap
+      display flex
+      flex-direction column
+      width 100%
+      height 100%
+      justify-content center
+      align-items center
+      background $primary-color
+
+      .success-tip
+        font-size 42px
+        font-weight bold
+        color #666
+        padding 20px 30px
+        border 5px solid #666
+        border-radius 6px
+
+      .qrcode_top
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        width 710px
+        margin 20px
+        height 830px
+        border-radius 20px
+        background #fff
+
+        // box-shadow 10px 10px 5px #888888
+        .qrcode
+          width 500px !important
+          height 500px !important
+          box-shadow 0px 0px 10px 10px #ebebeb
+
+        .message
+          /* background-color: tomato; */
+          margin-top 60px
+          font-size 32px
+
+        .messages
+          margin-top 20px
+          font-size 32px
+
+    .stage-3
+      width 100%
+      height 100%
+      display flex
+      align-items center
+      justify-content space-around
+
+      .fail-title__wrap
+        width 660px
+        height 260px
+        border 5px solid #fff
+        border-radius 16px
+        background #fff
+        box-shadow 1px 1px 6px #ebebeb
+        display flex
+        flex-direction column
+        align-items center
+        justify-content space-around
+
+        .fail-title__top
+          display flex
+          width 210px
+          justify-content space-between
+          align-items start
+          // margin-top 18px
+          // margin-bottom 18px
+
+          .fail-title
+            color #666
+            font-size 36px
+            text-align center
+            font-weight 550
+
+        .error-message
+          width 420px
+          height 130px
+          border-radius 16px
+          border 1px solid #ebebeb
+          box-shadow 2px 2px 3px #ebebeb

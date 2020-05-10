@@ -1,0 +1,126 @@
+body
+  background-color #fff !important
+  height 100%
+
+.show
+  opacity 0.6  
+
+.package
+  display flex
+  flex-direction column
+  align-items center
+  flex 1
+  width 750px
+  height 100%
+  background #fafafa
+
+  // .head
+  //   display flex
+  //   align-items center
+  //   justify-content space-between
+  //   width 750px
+  //   height 96px
+  //   margin 24px 0 50px 0
+  //   background #ffffff
+  //   padding 0 40px
+  //   box-shadow 0 0 6px 0 rgba(229,229,229,1)
+
+  //   .head__left
+  //     font-family  PingFangSC-Regular
+  //     font-size  30px
+  //     color  #0F0F0F
+  //     letter-spacing  -0.50px
+  //     text-align  center
+
+  .center
+    display flex
+    flex-direction column
+    // margin-bottom 28px
+    margin 28px auto
+    width 706px
+    // height 290px
+    background #ffffff
+    border-radius 12px
+    box-shadow 0 0 4px 0 rgba(229,229,229,1)
+
+    .center__top
+      display flex
+      justify-content space-between
+      height 170px
+      align-items center
+      border-bottom 1px solid #F5F5F5
+
+      .top__pack
+        display  flex
+        align-items center
+
+        .center__top--package
+          font-family  PingFangSC-Semibold
+          font-size  32px
+          color  #0F0F0F
+          letter-spacing  -0.26px
+          text-align  center
+          margin-left 20px
+
+        .centre__top--right
+          display flex
+          flex-direction column
+          margin-left 40px
+
+          .center__top--name
+            font-family  PingFangSC-Semibold
+            font-size  30px
+            color  #3B3B3B
+            letter-spacing  -0.5px
+            text-align  left
+
+          .center__top--time
+            font-family  PingFangSC-Regular
+            font-size  24px
+            color  #0F0F0F
+            letter-spacing  -0.4px
+            text-align  left
+
+      .center__top--radio
+        margin-right  20px    
+
+    .center__bootom
+      display flex
+      flex-direction  column
+      padding  20px
+
+      .bootom__hint
+        display  flex
+        align-items  center
+
+        .bootom__hint--img
+          width 26px
+          height 26px
+          // line-height  26px
+
+        .bootom__hint--explain
+          margin-left 10px
+          font-family  PingFangSC-Regular
+          font-size  24px
+          color  #FF3030
+          letter-spacing  0
+
+      .bootom__hint--text
+        margin-top 10px
+        flex-wrap  wrap
+        font-family  PingFangSC-Regular
+        font-size  24px
+        color  #0F0F0F
+        letter-spacing  -0.4px
+        text-align  left      
+
+        .hint__text--type
+          font-family  PingFangSC-Regular
+          font-size  24px
+          color  #0F0F0F
+
+
+
+
+
+

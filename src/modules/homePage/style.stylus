@@ -1,0 +1,233 @@
+body
+  background-color #fff !important
+  height 100%
+
+.mycard
+  display flex
+  flex-direction column
+  width 750px
+  height 100%
+  background #E5E5E5
+
+  .cardheader
+    display flex
+    justify-content space-between
+    width 750px
+    height 168px
+    padding-left 30px
+    background $primary-color
+    box-shadow 0px 2px 8px 0px rgba(0,0,0,0.15)
+
+    .cardheader_foot
+      display flex
+      flex-direction column
+      justify-content center
+      width 750px
+      height 168px
+
+      .cardheader_foot-rtname
+        width auto
+        height 50px
+        font-size 36px
+        font-family PingFangSC-Medium, PingFang SC
+        font-weight bold
+        color rgba(0, 0, 0, 1)
+        line-height 50px
+
+      .foot_position
+        margin-top 20px
+
+        .foot_position-position
+          width 32px
+          height 32px
+
+        .cardheader_foot-rtphone
+          width 300px
+          // height 33px
+          font-size 24px
+          font-family PingFangSC-Medium, PingFang SC
+          font-weight 400
+          color rgba(51,51,51,1)
+          // line-height 33px
+
+        .cardheader_foot-br
+          font-size 24px
+          padding 0 6px
+          font-weight 400
+          color rgba(0,0,0,1)
+
+        .cardheader_foot-more
+          height 33px
+          font-size 24px
+          font-weight bold
+          color rgba(0,0,0,1)
+
+    .cardheader_foot-rtimg
+      width 211px
+      height 168px
+
+  .cardcenter
+    display flex
+    flex-direction column
+    flex 1
+    width 750px
+    height 100%
+    background #fafafc
+    overflow auto
+
+    .cardcenter-swipe
+      width 750px
+      height 326px
+      padding 20px 40px
+
+
+      .cardcenter-swipe-img
+        width 670px
+        height 286px
+        border-radius 15px
+
+    .cardcenter-card
+      display flex
+      flex-direction column
+      width 750px
+      height 310px
+
+      .card-top
+        display flex
+        justify-content space-between
+        padding-left 20px
+        align-items baseline
+
+        .card_top-text
+          height 40px
+          font-size 28px
+          font-family PingFangSC-Medium,PingFang SC
+          font-weight bold
+          color rgba(0,0,0,1)
+          line-height 40px
+
+        .card_top-more
+          height 33px
+          font-size 24px
+          padding-right 20px
+          font-family PingFangSC-Regular,PingFang SC
+          font-weight 400
+          color rgba(0,0,0,1)
+          line-height 33px
+
+    .card_bootom
+      display flex
+      padding-left 20px
+      //padding-top 10px
+      margin 20px 0
+      width 750px
+      flex-wrap nowrap
+      overflow-x auto
+      overflow-y hidden
+      // white-space  nowrap
+
+      .card_bootom-hot
+        display flex
+        flex-direction column
+        align-items center
+        flex-shrink 0
+        width 288px
+        height 216px
+        border-radius 15px
+        margin-right 24px
+        //background aliceblue
+
+        .card_bootom-img
+          border-radius 15px
+          //margin-top 10px
+          width 288px
+          height 135px
+
+        .card_bootom-price
+          display flex
+
+          .card_bootom-claname
+            overflow-x hidden
+            white-space nowrap
+            height 40px
+            max-width 160px
+            text-overflow ellipsis
+            font-family PingFangSC-Regular,PingFang SC
+            font-size 24px
+
+          .card_bootom-clapri
+            margin-left 8px
+            font-family PingFangSC-Regular,PingFang SC
+            font-size 24px
+            //width 120px
+            color red
+
+      .card_bootom-text
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        width 750px
+        height 216px
+        font-family PingFangSC-Regular,PingFang SC
+        font-weight 400
+        font-size 28px
+        color #bfbfbf
+
+        .card_bottom-empty
+          width 96px
+          height 96px
+
+        .card_bottom-card
+          margin-top 6px
+
+        // background url("./assets/img/Package.png") no-repeat
+        // background-size 100% 100%
+
+  .cardfoot
+    display flex
+    width 750px
+    height 98px
+    align-items  center
+    background #FFFFFF
+    justify-content  space-around
+
+    .cardbottom
+      border-bottom 6px solid rgba(0,0,0,1)
+
+    .cardfoot_bottom
+      display flex
+      flex-direction column
+      justify-content center
+      align-items center
+      width 64px
+      height 98px
+
+      .cardfoot_bottom-img
+        width 32px
+        height 32px
+
+      .cardfoot_bottom-text
+        width auto
+        height 28px
+        font-size 20px
+        font-family PingFangSC-Regular,PingFang SC
+        font-weight 400
+        color rgba(0,0,0,1)
+        line-height 28px
+
+.van-swipe__indicator
+  width 18px
+  height 10px
+  background rgba(216,216,216,1)
+  border-radius 6px
+  opacity 1
+
+.van-swipe__indicator--active
+  width 24px
+  height 10px
+  background $primary-color
+  border-radius 6px
+
+.van-icon
+  top 4px

@@ -1,0 +1,30 @@
+button($btn-color = #333, $btn-bg = false, $btn-bd = false)
+  color $btn-color
+  text-decoration none
+  if ($btn-bg)
+    background-color $btn-bg
+  if ($btn-bd)
+    border 1px solid $btn-bd
+  // hover
+  &:hover
+    text-decoration none
+    if ($btn-bg) // have background-color
+      color $btn-color
+      // text-decoration none
+      if light($btn-bg)
+        background-color $btn-bg - 15%
+      else
+        background-color $btn-bg + 15%
+    else // not have background-color
+      // text-decoration underline
+      if light($btn-color)
+        color $btn-color - 15%
+      else
+        color $btn-color + 15%
+  // disabled
+  &:disabled, .disabled
+    color $btn-color
+    if ($btn-bg)
+      background-color $btn-bg
+    if ($btn-bd)
+      border 1px solid $btn-bd

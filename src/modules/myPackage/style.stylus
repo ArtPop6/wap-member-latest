@@ -1,0 +1,179 @@
+body
+  background-color #fff !important
+  height 100%
+
+.course
+  display flex
+  flex-direction column
+  width 750px
+  height 100%
+  
+  .cardheader
+    width 750px
+    height 168px
+    background $primary-color
+
+    .cardheader_foot
+      display flex
+      align-items center
+      width 750px
+      height 168px
+
+      .cardheader_foot-left
+        display flex
+        justify-content center
+        align-items center
+        width 104px
+        height 104px
+        margin-left 45px
+
+        .cardheader_foot-photo
+          width 88px
+          height 88px
+          background rgba(216,216,216,1)
+          border 2px solid rgba(255,255,255,1)
+
+      .cardheader_foot-right
+        display flex
+        flex-direction column
+        justify-content center
+        width 390px
+        height 104px
+        padding-left 20px
+
+        .cardheader_foot-rtname
+          width auto
+          height 45px
+          font-size 32px
+          font-family PingFangSC-Medium, PingFang SC
+          font-weight bold
+          color rgba(0, 0, 0, 1)
+          line-height 45px
+
+        .cardheader_foot-rtphone
+          width auto
+          height 40px
+          font-size 28px
+          font-family PingFangSC-Medium, PingFang SC
+          font-weight bold
+          color rgba(0, 0, 0, 0.5)
+          line-height 40px
+
+      .cardheader_foot-rtimg
+        width 211px
+        height 168px
+
+  .container
+    display flex
+    flex-direction column
+    align-items center
+    flex 1
+    width 750px
+    height 84px
+    background #fafafa
+
+    .container__package
+      display flex
+      justify-content space-between
+      align-items  center
+      width 706px
+      margin-top 20px
+
+      .package__left
+        display flex
+        justify-content space-between
+        align-items  center
+
+        .pay__left--icon
+          width 10px
+          height 28px
+          background-image linear-gradient(-180deg, #F3D825 0%, #FFDE00 100%)
+          border-radius 6px
+
+        .package__left--name
+          margin-left 12px
+          font-family  PingFangSC-Medium;
+          font-weight  bold
+          font-size  32px;
+          color  #0F0F0F;
+          letter-spacing  -0.52px;
+
+      .package__right
+        font-family  PingFangSC-Regular;
+        font-size  24px;
+        color  #0F0F0F;
+        letter-spacing  -0.4px;
+        text-align  center
+
+    // .container__selct
+    //   border  2px #F3D825 solid 
+
+    .container
+    // display flex
+    flex-direction column
+    align-items center
+    flex 1
+    overflow auto
+    width 750px
+    background #fafafa
+
+    .container__selct
+      border  4px #F3D825 solid 
+
+    .container__comtent
+      display flex
+      justify-content space-between
+      align-items center
+      width 706px
+      height 240px
+      background rgba(255,248,198,1) rgba(255,255,255,1)
+      border-radius 12px
+      padding 0 28px 
+      margin 28px auto 0 
+      box-shadow 0px 2px 8px 0px rgba(0,0,0,0.1)
+
+      .comtent__left
+        display flex
+        align-items center
+        // margin-left 28px 
+
+        .left__img
+          width 160px
+          height 160px
+
+        .left__text
+          display  flex
+          flex-direction  column
+          // justify-content  center
+          margin-left  30px
+
+          .left__text--name
+            font-weight  bold
+            font-family  PingFangSC-Medium
+            font-size  32px
+            color  #0F0F0F
+            letter-spacing  -0.52px
+          
+          .left__text--deadline
+            margin-top 10px
+            height 33px
+            font-size 24px
+            font-family PingFangSC-Regular,PingFang SC
+            font-weight 400
+            color #0F0F0F
+            margin-top 16px
+            line-height 33px
+
+          .left__text--price
+            margin-top 16px
+            display  flex
+
+            .left__text--original
+              height 40px
+              font-size 28px
+              font-family PingFangSC-Regular,PingFang SC
+              font-weight 400
+              color rgba(43,44,49,1)
+              line-height 40px
+
+    
