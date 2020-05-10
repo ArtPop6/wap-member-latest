@@ -72,7 +72,7 @@
     "html-webpack-plugin": "^2.30.1",
     "http-proxy-middleware": "^0.17.4",
     "loader-utils": "^1.1.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "postcss-adaptive": "^0.4.0",
     "postcss-loader": "^2.0.8",
