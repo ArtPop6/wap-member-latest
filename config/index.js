@@ -5,9 +5,9 @@ let proxyHost = ''
 
 switch (process.env.SERVER_ENV) {
   case 'dev': {
-    proxyHost = 'http://dev.m.ampmfit.net/api/' // 用作代理调试
+    // proxyHost = 'http://dev.m.ampmfit.net/api/' // 用作代理调试
     // proxyHost = 'http://192.168.0.21:9003/' // 用于调试某个开发机器上的应用
-    // proxyHost = 'http://yapi.ampmfit.net/mock/40/api' // mock server
+    proxyHost = 'http://yapi.ampmfit.net/mock/40/api' // mock server
     break
   }
   case 'qa': {

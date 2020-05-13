@@ -47,6 +47,7 @@
 <script>
   import moment from 'moment'
   import './slider.styl'
+  import param from '@utils/url-param'
 
   export default {
     props: ['storeId', 'type', 'currentType'],
@@ -131,7 +132,8 @@
         clickIndex: '',
         currentIndex: '',
         currentDay: '',
-        hasCourseDate: []
+        hasCourseDate: [],
+        paramDate: param('date') || moment().format('YYYYMMDD')
       }
     },
     methods: {
@@ -161,9 +163,9 @@
       },
       // 获取今天日期，上一周日期，下一周日期
       getDatesInfo () {
-        this.dates[0] = { date: moment().subtract(7, 'd') }
-        this.dates[1] = { date: moment() }
-        this.dates[2] = { date: moment().add(7, 'd') }
+        this.dates[0] = { date: moment(this.paramDate, 'YYYYMMDD').subtract(7, 'd') }
+        this.dates[1] = { date: moment(this.paramDate, 'YYYYMMDD') }
+        this.dates[2] = { date: moment(this.paramDate, 'YYYYMMDD').add(7, 'd') }
         this.judgeCurrentIndex()
         this.currentDay = this.dates[1].date.format('YYYY-MM-DD')
         this.judgeHasCourse()
@@ -172,6 +174,22 @@
       // yi'ri
       getCurrentWeekDates (date) {
         const weekOfDate = Number(moment(date).format('E'))
+        if (weekOfDate === 7) {
+          const weekOfDate = 0
+          const weeks = [7, 1, 2, 3, 4, 5, 6]
+          const today = moment()
+          const arr = []
+          for (let i = 0; i < 7; i++) {
+            const _theDate = moment(date).subtract(weekOfDate - i, 'd')
+            arr.push({
+              date: _theDate.format('YYYY-MM-DD'),
+              moDate: _theDate,
+              week: weeks[i],
+              isToday: _theDate.format('YYYY-MM-DD') === today.format('YYYY-MM-DD')
+            })
+          }
+          return arr
+        }
         const weeks = [7, 1, 2, 3, 4, 5, 6]
         const today = moment()
         const arr = []
